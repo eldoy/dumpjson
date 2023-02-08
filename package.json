@@ -1,0 +1,15 @@
+{
+  "name": "jsondump",
+  "version": "0.1.0",
+  "description": "Dump large Javascript objects to JSON file without using too much memory",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --ignore test/file.json test/jsondump.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldoy/jsondump"
+  },
+  "author": "Vidar Eldøy <vidar@eldoy.com>",
+  "license": "MIT"
+}
