@@ -1,6 +1,6 @@
 {
   "name": "dumpjson",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dump large Javascript objects to JSON file without using too much memory",
   "main": "index.js",
   "scripts": {
