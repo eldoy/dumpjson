@@ -8,17 +8,12 @@ module.exports = function (name, data) {
   const writer = fs.createWriteStream(name, { flags: 'a' })
 
   let first = true
-  function write(items) {
-    if (!Array.isArray(items)) {
-      items = [items]
-    }
+  function write(obj) {
     if (first) {
       writer.write('[\n')
     }
-    for (const obj of items) {
-      const line = JSON.stringify(obj)
-      writer.write(`${first ? '' : ',\n'}  ${line}`)
-    }
+    const line = JSON.stringify(obj)
+    writer.write(`${first ? '' : ',\n'}  ${line}`)
     first = false
   }
 
