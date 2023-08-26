@@ -21,14 +21,14 @@ const writer = dumpjson('file.json')
 // Very large array
 const largeArray = [...]
 for (const item of largeArray) {
-  dumpjson.write(item)
+  writer.write(item)
 }
 
 // Indicate end of stream
-dumpjson.end()
+writer.end()
 
 // Await if you need to wait for all writes to finish
-await dumpjson.end()
+await writer.end()
 ```
 
 MIT Licensed. Enjoy!
