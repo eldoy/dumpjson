@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-module.exports = function (name, data) {
+module.exports = function (name) {
   if (/^\w/.test(name)) {
     name = path.join(process.cwd(), name)
   }
